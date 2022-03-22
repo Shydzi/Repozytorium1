@@ -40,13 +40,64 @@
 #   def metoda(self):
 #       return "Pierwsza metoda"
 #====zadanie 5====#
-# class ciagi():
-#     def __init__(self,a,n):
-#         self.a = a
-#         self.n = n
-#     def wyswietl_dane(self,a, n):
-#         return "a wynosi" +str(a)+" b wynosi "+str(b)
+#zad5
+# class ciagAry:
+#     """Ciag arytmetyczny"""
+#     def __init__(self, pocz,kon,co):
+#         self.pocz=pocz
+#         self.kon=kon
+#         self.co=co
+#
+#     def wyswietl_dane(self):
+#         ciag = []
+#         for x in range (self.pocz,self.kon):
+#             ciag.append(x+self.co)
+#         return ciag
+#
+#     def pobierz_parametry(self):
+#         self.pocz=input("Podaj poczatek: ")
+#         self.pocz=int(self.pocz)
+#         self.kon=input("Podaj ilosc: ")
+#         self.kon = int(self.kon)
+#         self.co=input("Podaj r: ")
+#         self.co = int(self.co)
+#
+#         ciag = []
+#         for x in range(0,self.kon):
+#             ciag.append(self.pocz + self.co*x)
+#         return ciag
+#
 #     def pobierz_elementy(self):
+#         ciag=[]
+#         self.pocz=input("Podaj ilosc w ciagu: ")
+#         self.pocz=int(self.pocz)
+#         for x in range (0,self.pocz):
+#             self.kon=input("Podaj wartosc: ")
+#             ciag.append(self.kon)
+#         return ciag
+#
+#     def policz_sume(self):
+#         ciag = []
+#         suma=0
+#         for x in range (self.pocz,self.kon):
+#             ciag.append(x + self.co)
+#             suma+=x+self.co
+#         return suma
+#
+#     def policz_elementy(self):
+#         ciag = []
+#         suma = 0
+#         for x in range(self.pocz, self.kon):
+#             ciag.append(x + self.co)
+#             suma+=1
+#         return suma
+#
+# ciag=ciagAry(1,10,2)
+# print(ciag.wyswietl_dane())
+# print(ciag.pobierz_elementy())
+# print(ciag.pobierz_parametry())
+# print(ciag.policz_sume())
+# print(ciag.policz_elementy())
 #====zadanie 6====#
 # class Robaczek():
 #     def __init__(self,x, y ,krok):
