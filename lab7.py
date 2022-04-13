@@ -36,9 +36,9 @@ import numpy as np
 # c = a + b
 # print(c)
 #====zadanie 8====#
-a = np.arange(9).reshape(3,3)
-for x in a:
-    print(x)
+# a = np.arange(9).reshape(3,3)
+# for x in a:
+#     print(x)
 #====zadanie 9====#
 # a = np.arange(9).reshape(3,3)
 # for x in a.flat:
@@ -62,3 +62,7 @@ for x in a:
 # # print(c)
 # print(np.ravel(c))
 
+# a=np.arange(25).reshape(5,5)
+# print(a)
+# for x in range(0,5):
+#     print(a[:,x])
