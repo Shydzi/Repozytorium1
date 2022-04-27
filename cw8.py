@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-#====zadanie 1====#
+#====zadanie 2====#
 df = pd.read_csv('imiona.csv',header=0, sep=',', decimal='.')
 # print(df)
 # print(df[df['Liczba'] > 999])
