@@ -40,10 +40,10 @@ print(df)
 # print(df.sort_values('Utarg', ascending=False).head())
 # print(m)
 #====zadanie 3.3====#
-# m = df.groupby(['Sprzedawca']).count()
+# m = df.groupby(['Sprzedawca']).size()
 # print(m)
 #====zadanie 3.4====#
-# m = df.groupby(['Kraj']).count()
+# m = df.groupby(['Kraj']).size()
 # print(m)
 #====zadanie 3.5====#
 # filter1 = (df['Data zamowienia'] > '2005-01-01') & (df['Data zamowienia'] < '2006-01-01')
