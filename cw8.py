@@ -37,6 +37,7 @@ print(df)
 # print(m)
 #====zadanie 3.2====#
 # m = df['Utarg'].nlargest(n=5)
+# print(df.sort_values('Utarg', ascending=False).head())
 # print(m)
 #====zadanie 3.3====#
 # m = df.groupby(['Sprzedawca']).count()
