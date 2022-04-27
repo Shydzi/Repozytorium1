@@ -54,11 +54,11 @@ print(df)
 # filter1 = (df['Data zamowienia'] > '2004-01-01') & (df['Data zamowienia'] < '2005-01-01')
 # print(df.loc[filter1]['Utarg'].mean())
 #====zadanie 3.6====#
-filter1 = (df['Data zamowienia'] >= '2004-01-01') & (df['Data zamowienia'] < '2005-01-01')
+a = (df['Data zamowienia'] >= '2004-01-01') & (df['Data zamowienia'] < '2005-01-01')
 print(df.loc[filter1])
 
-filter2 = (df['Data zamowienia'] >= '2005-01-01') & (df['Data zamowienia'] < '2006-01-01')
+b = (df['Data zamowienia'] >= '2005-01-01') & (df['Data zamowienia'] < '2006-01-01')
 print(df.loc[filter2])
 
-df.loc[filter1].to_csv('zamówienia_2004.csv', sep=';', decimal=',')
-df.loc[filter2].to_csv('zamówienia_2005.csv', sep=';', decimal=',')
+df.loc[a].to_csv('zamówienia_2004.csv', sep=';', decimal=',')
+df.loc[b].to_csv('zamówienia_2005.csv', sep=';', decimal=',')
